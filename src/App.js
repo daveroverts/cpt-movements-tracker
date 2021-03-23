@@ -20,7 +20,7 @@ function App() {
   return (
     <Container>
       <Typography gutterBottom variant="h4">
-        CPT Movements Tracker
+        CPT Movements Tracker [{departures.length + arrivals.length}]
       </Typography>
 
       <Grid container spacing={10}>
