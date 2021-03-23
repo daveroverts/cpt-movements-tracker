@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import localforage from "localforage";
 import {
   Card,
   CardContent,
@@ -16,6 +17,24 @@ import AircraftList from "./components/AircraftList";
 function App() {
   const [departures, setDepartures] = useState([]);
   const [arrivals, setArrivals] = useState([]);
+
+  useEffect(() => {
+    localforage.getItem('departures', (err, value) => {
+      setDepartures(value)
+    })
+
+    localforage.getItem('arrivals', (err, value) => {
+      setArrivals(value)
+    })
+  }, [])
+
+  useEffect(() => {
+    localforage.setItem('departures', departures);
+  }, [departures])
+
+  useEffect(() => {
+    localforage.setItem('arrivals', arrivals);
+  }, [arrivals])
 
   return (
     <Container>
