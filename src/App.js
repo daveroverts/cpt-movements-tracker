@@ -3,9 +3,12 @@ import {
   Card,
   CardContent,
   Container,
+  Divider,
   Grid,
   Typography,
 } from "@material-ui/core";
+import FlightLandIcon from "@material-ui/icons/FlightLand";
+import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
 import "./App.css";
 import AircraftForm from "./components/AircraftForm";
 import AircraftList from "./components/AircraftList";
@@ -13,15 +16,22 @@ import AircraftList from "./components/AircraftList";
 function App() {
   const [departures, setDepartures] = useState([]);
   const [arrivals, setArrivals] = useState([]);
+
   return (
     <Container>
-      <Typography variant="h2">CPT Movements Tracker</Typography>
+      <Typography gutterBottom variant="h4">
+        CPT Movements Tracker
+      </Typography>
 
       <Grid container spacing={10}>
         <Grid item xs={6}>
           <Card>
             <CardContent>
-              <Typography variant="h3">Departures</Typography>
+              <Typography variant="h5">
+                Departures
+                <FlightTakeoffIcon />
+                &nbsp;[{departures.length}]
+              </Typography>
               <AircraftForm
                 saveAircraft={(aircraft) => {
                   const trimmedAircraft = aircraft.trim();
@@ -30,6 +40,7 @@ function App() {
                   }
                 }}
               />
+              <Divider />
               <AircraftList
                 aircraft={departures}
                 deleteAircraft={(aircraftIndex) => {
@@ -45,7 +56,11 @@ function App() {
         <Grid item xs={6}>
           <Card>
             <CardContent>
-              <Typography variant="h3">Arrivals</Typography>
+              <Typography gutterBottom variant="h5">
+                Arrivals
+                <FlightLandIcon />
+                &nbsp;[{arrivals.length}]
+              </Typography>
               <AircraftForm
                 saveAircraft={(aircraft) => {
                   const trimmedAircraft = aircraft.trim();
@@ -54,6 +69,7 @@ function App() {
                   }
                 }}
               />
+              <Divider />
               <AircraftList
                 aircraft={arrivals}
                 deleteAircraft={(aircraftIndex) => {
