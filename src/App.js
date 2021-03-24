@@ -47,7 +47,7 @@ function App() {
       </Typography>
 
       <Grid container spacing={10}>
-        <Grid item xs={6}>
+        <Grid item md={6}>
           <Card>
             <CardContent>
               <Typography variant="h5">
@@ -76,7 +76,7 @@ function App() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6}>
           <Card>
             <CardContent>
               <Typography gutterBottom variant="h5">
