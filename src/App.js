@@ -20,11 +20,16 @@ function App() {
 
   useEffect(() => {
     localforage.getItem('departures', (err, value) => {
-      setDepartures(value)
+      if (value != null) {
+        setDepartures(value)
+      }
     })
 
     localforage.getItem('arrivals', (err, value) => {
-      setArrivals(value)
+      if (value !- null)
+      {
+        setArrivals(value)
+      }
     })
   }, [])
 
