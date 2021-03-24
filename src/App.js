@@ -26,8 +26,7 @@ function App() {
     })
 
     localforage.getItem('arrivals', (err, value) => {
-      if (value !- null)
-      {
+      if (value != null) {
         setArrivals(value)
       }
     })
