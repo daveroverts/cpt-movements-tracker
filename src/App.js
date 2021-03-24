@@ -19,13 +19,13 @@ function App() {
   const [arrivals, setArrivals] = useState([]);
 
   useEffect(() => {
-    localforage.getItem('departures', (err, value) => {
+    localforage.getItem('departures', (_err, value) => {
       if (value != null) {
         setDepartures(value)
       }
     })
 
-    localforage.getItem('arrivals', (err, value) => {
+    localforage.getItem('arrivals', (_err, value) => {
       if (value != null) {
         setArrivals(value)
       }
