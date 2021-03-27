@@ -1,20 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from 'react';
 import localforage from "localforage";
-import {
-  Card,
-  CardContent,
-  Container,
-  Divider,
-  Grid,
-  Typography,
-} from "@material-ui/core";
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import Copyright from '../src/Copyright';
+import { Card, CardContent, Divider, Grid } from '@material-ui/core';
 import FlightLandIcon from "@material-ui/icons/FlightLand";
 import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
-import "./App.css";
-import AircraftForm from "./components/AircraftForm";
-import AircraftList from "./components/AircraftList";
+import AircraftForm from "../src/components/AircraftForm";
+import AircraftList from "../src/components/AircraftList";
 
-function App() {
+export default function Index() {
   const [departures, setDepartures] = useState([]);
   const [arrivals, setArrivals] = useState([]);
 
@@ -42,11 +38,11 @@ function App() {
 
   return (
     <Container>
-      <Typography gutterBottom variant="h4">
+      <Box my={4}>
+        <Typography variant="h4" component="h1" gutterBottom>
         CPT Movements Tracker [{departures.length + arrivals.length}]
-      </Typography>
-
-      <Grid container spacing={10}>
+        </Typography>
+        <Grid container spacing={10}>
         <Grid item md={6}>
           <Card>
             <CardContent>
@@ -106,8 +102,8 @@ function App() {
           </Card>
         </Grid>
       </Grid>
+        <Copyright />
+      </Box>
     </Container>
   );
 }
-
-export default App;
