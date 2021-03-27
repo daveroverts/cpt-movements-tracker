@@ -1,10 +1,13 @@
 {
-  "name": "nextjs",
-  "version": "4.0.0",
+  "name": "cpt-movements-tracker",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@fontsource/roboto": "^4.2.2",
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
     "clsx": "latest",
+    "localforage": "^1.9.0",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",

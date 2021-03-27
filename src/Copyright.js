@@ -4,11 +4,11 @@ import MuiLink from '@material-ui/core/Link';
 
 export default function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      {new Date().getFullYear()}
+      2021{new Date().getFullYear()>2021&&"-"+new Date().getFullYear()}
       {' '}
-      <MuiLink color="inherit" href="https://daveroverts.nl/">
+      <MuiLink color="inherit" href="https://github.com/daveroverts/cpt-movements-tracker">
         CPT movements tracker by Dave Roverts (1186831)
       </MuiLink>
       {'.'}
