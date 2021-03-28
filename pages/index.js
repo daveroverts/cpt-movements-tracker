@@ -9,6 +9,7 @@ import FlightLandIcon from "@material-ui/icons/FlightLand";
 import FlightTakeoffIcon from "@material-ui/icons/FlightTakeoff";
 import AircraftForm from "../src/components/AircraftForm";
 import AircraftList from "../src/components/AircraftList";
+import Link from '../src/Link';
 
 export default function Index() {
   const [departures, setDepartures] = useState([]);
@@ -102,6 +103,9 @@ export default function Index() {
           </Card>
         </Grid>
       </Grid>
+      <Link href="/about" color="secondary">
+          Go to the about page
+        </Link>
         <Copyright />
       </Box>
     </Container>
