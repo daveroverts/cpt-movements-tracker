@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { TextField } from "@material-ui/core";
 
 export default function AircraftForm({ saveAircraft }) {
@@ -7,8 +7,11 @@ export default function AircraftForm({ saveAircraft }) {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        saveAircraft(value);
-        setValue("");
+        const trimmedValue = value.trim();
+        if (trimmedValue.length > 0) {
+          saveAircraft(value);
+          setValue("");
+        }
       }}
     >
       <TextField
