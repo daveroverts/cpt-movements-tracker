@@ -3,10 +3,9 @@ import {
   List,
   ListItem,
   ListItemSecondaryAction,
-  ListItemText,
+  ListItemText
 } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import React from "react";
 
 export default function AircraftList({ aircraft, deleteAircraft }) {
   return (
