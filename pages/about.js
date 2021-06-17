@@ -20,7 +20,7 @@ export default function About() {
           both are used in the total that can be viewed at the top.
         </Typography>
         <Typography variant="body1" paragraph="true">
-          Good to know: Both lists are stored within your browser's IndexedDB or
+          Good to know: Both lists are stored within your browser&lsquo;s IndexedDB or
           LocalStorage, so even if you refresh the page, you still have all data
         </Typography>
         <Typography variant="h5">Example usage</Typography>
