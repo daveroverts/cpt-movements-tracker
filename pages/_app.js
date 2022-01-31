@@ -4,11 +4,13 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import Head from "next/head";
 import PropTypes from "prop-types";
 import React from "react";
+import { useAnalytics } from "../lib/analytics";
 import theme from "../src/theme";
 import "../styles.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
+  useAnalytics();
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
