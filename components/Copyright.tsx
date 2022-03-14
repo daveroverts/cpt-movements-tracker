@@ -4,8 +4,8 @@ export default function Copyright() {
   return (
     <Text color="dimmed">
       {"Copyright © "}
-      2021{new Date().getFullYear() > 2021 &&
-        `-${new Date().getFullYear()}`}{" "}
+      2021
+      {new Date().getFullYear() > 2021 && `-${new Date().getFullYear()}`}{" "}
       <Text
         variant="link"
         component="a"
