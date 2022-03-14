@@ -2,8 +2,10 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
+import useAnalytics from "lib/analytics";
 
 export default function App(props: AppProps) {
+  useAnalytics();
   const { Component, pageProps } = props;
 
   return (
