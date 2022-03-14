@@ -3,6 +3,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
 import useAnalytics from "lib/analytics";
+import Layout from "components/Layout";
 
 export default function App(props: AppProps) {
   useAnalytics();
@@ -26,7 +27,9 @@ export default function App(props: AppProps) {
           colorScheme: "light",
         }}
       >
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </MantineProvider>
     </>
   );

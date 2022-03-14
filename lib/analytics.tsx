@@ -10,7 +10,7 @@ const useAnalytics = () => {
             Fathom.load(process.env.NEXT_PUBLIC_FATHOM_SITE_ID, {
 
                 url: process.env.NEXT_PUBLIC_FATHOM_URL,
-                includedDomains: ['eat.daveroverts.nl']
+                includedDomains: ['cpt.daveroverts.nl']
             });
         }
 
