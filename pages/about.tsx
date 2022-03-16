@@ -15,7 +15,8 @@ export default function About() {
       </Text>
       <Text mt="xs">
         Good to know: Both lists are stored within your browser&lsquo;s
-        LocalStorage, so even if you refresh the page, you still have all data.
+        IndexedDB or LocalStorage, so even if you refresh the page, you still
+        have all data.
       </Text>
 
       <Title mt="xl" order={2}>
