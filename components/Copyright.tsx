@@ -1,10 +1,10 @@
 import { Text } from "@mantine/core";
+import pkg from "package.json";
 
 export default function Copyright() {
   return (
     <Text color="dimmed">
-      {"Copyright © "}
-      2021
+      Copyright © 2021
       {new Date().getFullYear() > 2021 && `-${new Date().getFullYear()}`}{" "}
       <Text
         variant="link"
@@ -13,7 +13,7 @@ export default function Copyright() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        CPT movements tracker by Dave Roverts (1186831)
+        CPT movements tracker v{pkg.version} by Dave Roverts (1186831)
       </Text>
     </Text>
   );
