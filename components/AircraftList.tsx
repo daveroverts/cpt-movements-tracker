@@ -22,13 +22,15 @@ export default function AircraftList(Props: IAircraftListProps) {
     <tr key={element.id}>
       <td>{element.callsign}</td>
       <td>
-        <ActionIcon
-          color="red"
-          aria-label="Remove aircraft"
-          onClick={() => deleteAircraft(index)}
-        >
-          <Trash />
-        </ActionIcon>
+        <Group position="right">
+          <ActionIcon
+            color="red"
+            aria-label="Remove aircraft"
+            onClick={() => deleteAircraft(index)}
+          >
+            <Trash />
+          </ActionIcon>
+        </Group>
       </td>
     </tr>
   ));
