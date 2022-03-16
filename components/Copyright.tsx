@@ -3,11 +3,12 @@ import pkg from "package.json";
 
 export default function Copyright() {
   return (
-    <Text color="dimmed">
+    <Text color="dimmed" size="xs">
       Copyright © 2021
       {new Date().getFullYear() > 2021 && `-${new Date().getFullYear()}`}{" "}
       <Text
         variant="link"
+        size="xs"
         component="a"
         href="https://github.com/daveroverts/cpt-movements-tracker"
         target="_blank"

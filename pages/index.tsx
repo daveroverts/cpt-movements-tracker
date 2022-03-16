@@ -44,7 +44,7 @@ export default function Home() {
         CPT Movements Tracker [{departures.length + arrivals.length}]
       </Title>
       <Grid mt="xs">
-        <Grid.Col span={6}>
+        <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Departures"
             icon={<PlaneDeparture />}
@@ -60,7 +60,7 @@ export default function Home() {
             }}
           />
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Arrivals"
             icon={<PlaneArrival />}
