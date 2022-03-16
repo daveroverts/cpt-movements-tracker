@@ -1,29 +1,89 @@
 {
   "name": "cpt-movements-tracker",
-  "version": "0.2.0",
+  "version": "0.1.0",
+  "author": {
+    "name": "Dave Roverts",
+    "email": "me@daveroverts.nl",
+    "url": "https://www.daveroverts.nl"
+  },
   "private": true,
-  "dependencies": {
-    "@fontsource/roboto": "^4.5.3",
-    "@material-ui/core": "latest",
-    "@material-ui/icons": "^4.11.2",
-    "clsx": "latest",
-    "fathom-client": "^3.4.1",
-    "localforage": "^1.10.0",
-    "next": "^12.1.0",
-    "prop-types": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveroverts/cpt-movements-tracker.git"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cm": "cz"
+  },
+  "dependencies": {
+    "@mantine/core": "^4.0.4",
+    "@mantine/form": "^4.0.4",
+    "@mantine/hooks": "^4.0.4",
+    "@mantine/next": "^4.0.4",
+    "fathom-client": "^3.4.1",
+    "localforage": "^1.10.0",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tabler-icons-react": "^1.38.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-next": "^12.1.0",
-    "husky": "^7.0.4"
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.40",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.2",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "prettier": "2.5.1",
+    "semantic-release": "^19.0.2",
+    "typescript": "4.6.2"
+  },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
