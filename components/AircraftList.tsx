@@ -1,5 +1,5 @@
 import { ActionIcon, Group, Paper, Table, Text, Title } from "@mantine/core";
-import { Trash } from "tabler-icons-react";
+import { IconTrash } from "@tabler/icons";
 import AircraftForm from "./AircraftForm";
 
 interface IAircraftListProps {
@@ -38,7 +38,7 @@ export default function AircraftList(Props: IAircraftListProps) {
             aria-label="Remove aircraft"
             onClick={() => deleteAircraft(index)}
           >
-            <Trash />
+            <IconTrash />
           </ActionIcon>
         </Group>
       </td>

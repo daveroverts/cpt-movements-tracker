@@ -6,7 +6,7 @@ import {
   ThemeIcon,
   Title,
 } from "@mantine/core";
-import { PlaneInflight } from "tabler-icons-react";
+import { IconPlaneInflight } from "@tabler/icons";
 
 export default function Layout({ children }: any) {
   const useStyles = createStyles((theme) => ({
@@ -24,7 +24,7 @@ export default function Layout({ children }: any) {
         <Header height={60} p="xs">
           <Group align="center" direction="row">
             <ThemeIcon>
-              <PlaneInflight />
+              <IconPlaneInflight />
             </ThemeIcon>
             <Title className={classes.title}>CPT Movements Tracker</Title>
           </Group>

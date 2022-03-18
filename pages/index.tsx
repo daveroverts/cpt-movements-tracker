@@ -3,7 +3,7 @@ import AircraftList from "components/AircraftList";
 import Copyright from "components/Copyright";
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
-import { PlaneArrival, PlaneDeparture } from "tabler-icons-react";
+import { IconPlaneArrival, IconPlaneDeparture } from "@tabler/icons";
 import localforage from "localforage";
 import { useState, useEffect } from "react";
 
@@ -45,7 +45,7 @@ export default function Home() {
         <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Departures"
-            icon={<PlaneDeparture />}
+            icon={<IconPlaneDeparture />}
             aircraft={departures}
             saveAircraft={(val: string) => {
               setDepartures([...departures, { id: uuidv4(), callsign: val }]);
@@ -61,7 +61,7 @@ export default function Home() {
         <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Arrivals"
-            icon={<PlaneArrival />}
+            icon={<IconPlaneArrival />}
             aircraft={arrivals}
             saveAircraft={(val: string) => {
               setArrivals([...arrivals, { id: uuidv4(), callsign: val }]);
