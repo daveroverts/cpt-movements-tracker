@@ -11,6 +11,7 @@ export default function About() {
         description="This tool was created to better keep track of aircraft that visited a CPT."
       />
       <Container>
+        <Title order={2}>About</Title>
         <Text mt="xs">
           This tool was created to better keep track of aircraft that visited a
           CPT. There are 2 lists that can be filled with aircraft, 1 for
