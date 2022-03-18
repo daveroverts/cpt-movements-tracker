@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.1.0...v1.2.0) (2022-03-18)
+
+
+### Features
+
+* add dark theme support ([600d25c](https://github.com/daveroverts/cpt-movements-tracker/commit/600d25cd840282e05b8e8da79d595bddd0062f08))
+
 # [1.1.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.0.2...v1.1.0) (2022-03-18)
 
 
