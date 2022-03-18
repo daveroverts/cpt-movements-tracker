@@ -1,4 +1,4 @@
-import { ActionIcon, Card, Group, Table, Text, Title } from "@mantine/core";
+import { ActionIcon, Group, Paper, Table, Text, Title } from "@mantine/core";
 import { Trash } from "tabler-icons-react";
 import AircraftForm from "./AircraftForm";
 
@@ -36,7 +36,7 @@ export default function AircraftList(Props: IAircraftListProps) {
   ));
 
   return (
-    <Card shadow="sm" withBorder>
+    <Paper shadow="xs" p="lg">
       <Group>
         <Title order={2}>{title}</Title>
         <Text>[{aircraft.length}]</Text>
@@ -49,6 +49,6 @@ export default function AircraftList(Props: IAircraftListProps) {
       <Table mt="xs">
         <tbody>{rows}</tbody>
       </Table>
-    </Card>
+    </Paper>
   );
 }
