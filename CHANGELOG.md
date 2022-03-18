@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.0.1...v1.0.2) (2022-03-18)
+
+
+### Bug Fixes
+
+* **aircraftlist:** fix delete icon hidden if text too long ([7119816](https://github.com/daveroverts/cpt-movements-tracker/commit/7119816f599d60857d3a828446a9beb2a9da833a))
+
 ## [1.0.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.0.0...v1.0.1) (2022-03-16)
 
 
