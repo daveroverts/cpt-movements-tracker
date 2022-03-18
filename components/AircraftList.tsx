@@ -46,7 +46,7 @@ export default function AircraftList(Props: IAircraftListProps) {
   ));
 
   return (
-    <Paper shadow="xs" p="lg">
+    <Paper shadow="md" withBorder p="lg">
       <Group>
         <Title order={3}>{title}</Title>
         <ActionIcon>{icon}</ActionIcon>
@@ -56,7 +56,7 @@ export default function AircraftList(Props: IAircraftListProps) {
         saveAircraft={(val: { callsign: string }) => saveAircraft(val.callsign)}
       />
 
-      <Table mt="xs" style={{ tableLayout: "fixed" }}>
+      <Table mt="xs" style={{ tableLayout: "fixed" }} highlightOnHover>
         <tbody>{rows}</tbody>
       </Table>
     </Paper>
