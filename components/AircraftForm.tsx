@@ -1,5 +1,6 @@
 import { Box, Button, Group, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { IconPlus } from "@tabler/icons";
 
 interface IAircraftFormProps {
   saveAircraft: Function;
@@ -28,7 +29,9 @@ export default function AircraftForm(props: IAircraftFormProps) {
         <Group grow>
           <TextInput required {...form.getInputProps("callsign")} />
 
-          <Button type="submit">Add</Button>
+          <Button type="submit" leftIcon={<IconPlus />}>
+            Add
+          </Button>
         </Group>
       </form>
     </Box>
