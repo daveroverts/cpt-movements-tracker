@@ -3,6 +3,7 @@ import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
 import useAnalytics from "lib/analytics";
 import Layout from "components/Layout";
+import { DefaultSeo } from "next-seo";
 
 export default function App(props: AppProps) {
   useAnalytics();
@@ -10,8 +11,21 @@ export default function App(props: AppProps) {
 
   return (
     <>
+      <DefaultSeo
+        defaultTitle="CPT Movements Tracker"
+        titleTemplate="%s | CPT Movements Tracker"
+        openGraph={{
+          type: "website",
+          locale: "en_GB",
+          url: "https://cpt.daveroverts.nl",
+        }}
+        twitter={{
+          handle: "@daveroverts",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
-        <title>CPT Movements Tracker</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
