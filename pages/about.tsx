@@ -5,8 +5,6 @@ import Link from "next/link";
 export default function About() {
   return (
     <Container>
-      <Title>CPT Movements Tracker</Title>
-
       <Text mt="xs">
         This tool was created to better keep track of aircraft that visited a
         CPT. There are 2 lists that can be filled with aircraft, 1 for
@@ -19,7 +17,7 @@ export default function About() {
         have all data.
       </Text>
 
-      <Title mt="xl" order={2}>
+      <Title mt="xl" order={3}>
         Example usage
       </Title>
 

@@ -40,9 +40,7 @@ export default function Home() {
 
   return (
     <Container>
-      <Title>
-        CPT Movements Tracker [{departures.length + arrivals.length}]
-      </Title>
+      <Title order={2}>Total: [{departures.length + arrivals.length}]</Title>
       <Grid mt="xs">
         <Grid.Col xs={12} md={6}>
           <AircraftList

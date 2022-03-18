@@ -48,9 +48,9 @@ export default function AircraftList(Props: IAircraftListProps) {
   return (
     <Paper shadow="xs" p="lg">
       <Group>
-        <Title order={2}>{title}</Title>
-        <Text>[{aircraft.length}]</Text>
+        <Title order={3}>{title}</Title>
         <ActionIcon>{icon}</ActionIcon>
+        <Text>[{aircraft.length}]</Text>
       </Group>
       <AircraftForm
         saveAircraft={(val: { callsign: string }) => saveAircraft(val.callsign)}
