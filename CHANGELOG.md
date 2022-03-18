@@ -1,3 +1,18 @@
+# [1.1.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.0.2...v1.1.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* **aircraftform:** add plus icon to add button ([d0d0264](https://github.com/daveroverts/cpt-movements-tracker/commit/d0d02646a42c86d861ef4754cc7273c96ecd1265))
+* **aircraftlist:** set width for callsign column ([57c0e51](https://github.com/daveroverts/cpt-movements-tracker/commit/57c0e5142b2ff62c42a027e5714a4cd4a010fc99))
+
+
+### Features
+
+* **_document:** add lang tag and support ssr styles extraction ([bcb74f9](https://github.com/daveroverts/cpt-movements-tracker/commit/bcb74f9cb85556bf4e2884791860ae848bfcee71))
+* add header ([f6f29c7](https://github.com/daveroverts/cpt-movements-tracker/commit/f6f29c7bda0ee7c98511bd07f901f04bed18ddb1))
+* add next-seo ([0d537d3](https://github.com/daveroverts/cpt-movements-tracker/commit/0d537d35f9ce3b4412f9303e0b186a479e5b1283))
+
 ## [1.0.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.0.1...v1.0.2) (2022-03-18)
 
 
