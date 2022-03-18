@@ -20,7 +20,17 @@ export default function AircraftList(Props: IAircraftListProps) {
 
   const rows = aircraft.map((element, index) => (
     <tr key={element.id}>
-      <td>{element.callsign}</td>
+      <Text
+        component="td"
+        style={{
+          whiteSpace: "normal",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          width: "90%",
+        }}
+      >
+        {element.callsign}
+      </Text>
       <td>
         <Group position="right">
           <ActionIcon
@@ -46,7 +56,7 @@ export default function AircraftList(Props: IAircraftListProps) {
         saveAircraft={(val: { callsign: string }) => saveAircraft(val.callsign)}
       />
 
-      <Table mt="xs">
+      <Table mt="xs" style={{ tableLayout: "fixed" }}>
         <tbody>{rows}</tbody>
       </Table>
     </Paper>
