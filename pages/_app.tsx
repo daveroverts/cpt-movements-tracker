@@ -26,6 +26,8 @@ export default function App(props: AppProps) {
         }}
       />
       <Head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
