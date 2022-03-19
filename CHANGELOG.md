@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.2.0...v1.3.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **index:** fix state update on unmounted component error ([afe4fb4](https://github.com/daveroverts/cpt-movements-tracker/commit/afe4fb49a2396c263c15835c7a64565e4c93a9e0))
+* **layout:** add container to header ([fe3280f](https://github.com/daveroverts/cpt-movements-tracker/commit/fe3280f3655ccdba5955cd0e61fa89bb1f268b5b))
+* **themeswitcher:** hide text on small viewports ([f93d54a](https://github.com/daveroverts/cpt-movements-tracker/commit/f93d54ab67534f0b075c701a88a28eb599b4099a))
+
+
+### Features
+
+* use open sans font ([4fd05a5](https://github.com/daveroverts/cpt-movements-tracker/commit/4fd05a5b5a20983bc286a83bb3e20116f5ef722d))
+
 # [1.2.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.1.0...v1.2.0) (2022-03-18)
 
 
