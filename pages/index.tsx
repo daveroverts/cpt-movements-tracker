@@ -5,7 +5,7 @@ import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 import { IconPlaneArrival, IconPlaneDeparture } from "@tabler/icons";
 import localforage from "localforage";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface IAircraftList {
   id: string;
@@ -13,18 +13,26 @@ interface IAircraftList {
 }
 
 export default function Home() {
+  const isMountedRef = useRef(true);
   const [departures, setDepartures] = useState<Array<IAircraftList>>([]);
   const [arrivals, setArrivals] = useState<Array<IAircraftList>>([]);
 
+  useEffect(
+    () => () => {
+      isMountedRef.current = false;
+    },
+    []
+  );
+
   useEffect(() => {
     localforage.getItem<Array<IAircraftList>>("departures", (_err, value) => {
-      if (value != null) {
+      if (value != null && isMountedRef.current) {
         setDepartures(value);
       }
     });
 
     localforage.getItem<Array<IAircraftList>>("arrivals", (_err, value) => {
-      if (value != null) {
+      if (value != null && isMountedRef.current) {
         setArrivals(value);
       }
     });
