@@ -54,6 +54,8 @@ export default function App(props: AppProps) {
           withNormalizeCSS
           theme={{
             colorScheme,
+            fontFamily: "Open Sans, sans-serif",
+            headings: { fontFamily: "Open Sans, sans-serif" },
           }}
         >
           <Layout>
