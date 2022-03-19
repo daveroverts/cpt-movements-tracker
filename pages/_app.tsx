@@ -25,6 +25,7 @@ export default function App(props: AppProps) {
       <DefaultSeo
         defaultTitle="CPT Movements Tracker"
         titleTemplate="%s | CPT Movements Tracker"
+        description="Tool to keep better track of aircraft during CPT's"
         openGraph={{
           type: "website",
           locale: "en_GB",
