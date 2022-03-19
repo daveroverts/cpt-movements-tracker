@@ -1,6 +1,6 @@
-module.exports = {
-    images: {
-        formats: ['image/avif', 'image/webp']
-    },
-    swcMinify: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 }
+
+module.exports = nextConfig
