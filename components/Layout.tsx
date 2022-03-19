@@ -1,5 +1,6 @@
 import {
   AppShell,
+  Container,
   createStyles,
   Group,
   Header,
@@ -12,7 +13,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 export default function Layout({ children }: any) {
   const useStyles = createStyles((theme) => ({
     title: {
-      [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+      [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
         fontSize: "20px",
       },
     },
@@ -23,15 +24,17 @@ export default function Layout({ children }: any) {
     <AppShell
       header={
         <Header height={60} p="xs">
-          <Group direction="row" position="apart" spacing="xs">
-            <Group direction="row">
-              <ThemeIcon>
-                <IconPlaneInflight />
-              </ThemeIcon>
-              <Title className={classes.title}>CPT Movements Tracker</Title>
+          <Container>
+            <Group direction="row" position="apart" spacing="xs">
+              <Group direction="row">
+                <ThemeIcon>
+                  <IconPlaneInflight />
+                </ThemeIcon>
+                <Title className={classes.title}>CPT Movements Tracker</Title>
+              </Group>
+              <ThemeSwitcher />
             </Group>
-            <ThemeSwitcher />
-          </Group>
+          </Container>
         </Header>
       }
     >
