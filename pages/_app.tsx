@@ -6,10 +6,11 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import useAnalytics from "lib/analytics";
-import Layout from "components/Layout";
 import { DefaultSeo } from "next-seo";
 import { useColorScheme } from "@mantine/hooks";
 import { useState } from "react";
+import { SessionProvider } from "next-auth/react";
+import Layout from "components/Layout";
 
 export default function App(props: AppProps) {
   useAnalytics();
@@ -59,9 +60,11 @@ export default function App(props: AppProps) {
             headings: { fontFamily: "Open Sans, sans-serif" },
           }}
         >
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <SessionProvider session={pageProps.session}>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </SessionProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>
