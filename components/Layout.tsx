@@ -8,6 +8,7 @@ import {
   Title,
 } from "@mantine/core";
 import { IconPlaneInflight } from "@tabler/icons";
+import AuthenticationButton from "./AuthenticationButton";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Layout({ children }: any) {
@@ -23,7 +24,7 @@ export default function Layout({ children }: any) {
   return (
     <AppShell
       header={
-        <Header height={60} p="xs">
+        <Header height={90} p="xs">
           <Container>
             <Group direction="row" position="apart" spacing="xs">
               <Group direction="row">
@@ -32,7 +33,10 @@ export default function Layout({ children }: any) {
                 </ThemeIcon>
                 <Title className={classes.title}>CPT Movements Tracker</Title>
               </Group>
-              <ThemeSwitcher />
+              <Group direction="row" spacing="xs">
+                <AuthenticationButton />
+                <ThemeSwitcher />
+              </Group>
             </Group>
           </Container>
         </Header>
