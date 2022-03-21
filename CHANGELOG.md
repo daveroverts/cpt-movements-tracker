@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.0...v2.0.0) (2022-03-21)
+
+
+### Features
+
+* add Vatsim login ([0be477f](https://github.com/daveroverts/cpt-movements-tracker/commit/0be477ff7fe0461a9ddb37c91202b8e7a218dcd3)), closes [#4](https://github.com/daveroverts/cpt-movements-tracker/issues/4)
+
+
+### BREAKING CHANGES
+
+* The application now requires a MySQL DB, and can no longer be used without login.
+
 # [1.3.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.2.0...v1.3.0) (2022-03-19)
 
 
