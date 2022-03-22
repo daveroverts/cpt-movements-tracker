@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v2.0.0...v2.0.1) (2022-03-22)
+
+
+### Bug Fixes
+
+* fix next-auth throwing HTTP 400's ([f2d4437](https://github.com/daveroverts/cpt-movements-tracker/commit/f2d4437658c061ff657262a11abc9eb14aca1b38))
+
 # [2.0.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.0...v2.0.0) (2022-03-21)
 
 
