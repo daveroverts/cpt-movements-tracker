@@ -1,11 +1,12 @@
 import { Button, Container, List, ListItem, Text, Title } from "@mantine/core";
 import Copyright from "components/Copyright";
+import Layout from "components/Layout";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 
 export default function About() {
   return (
-    <>
+    <Layout>
       <NextSeo
         title="About"
         description="This tool was created to better keep track of aircraft that visited a CPT."
@@ -50,6 +51,6 @@ export default function About() {
 
         <Copyright />
       </Container>
-    </>
+    </Layout>
   );
 }

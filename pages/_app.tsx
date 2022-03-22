@@ -10,11 +10,9 @@ import { DefaultSeo } from "next-seo";
 import { useColorScheme } from "@mantine/hooks";
 import { useState } from "react";
 import { SessionProvider } from "next-auth/react";
-import Layout from "components/Layout";
 
-export default function App(props: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   useAnalytics();
-  const { Component, pageProps } = props;
   const preferredColorScheme = useColorScheme();
   const [colorScheme, setColorScheme] =
     useState<ColorScheme>(preferredColorScheme);
@@ -61,9 +59,7 @@ export default function App(props: AppProps) {
           }}
         >
           <SessionProvider session={pageProps.session}>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
+            <Component {...pageProps} />
           </SessionProvider>
         </MantineProvider>
       </ColorSchemeProvider>
