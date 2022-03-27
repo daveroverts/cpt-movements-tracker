@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         defaultTitle="CPT Movements Tracker"
         titleTemplate="%s | CPT Movements Tracker"
         description="Tool to keep better track of aircraft during CPT's"
+        canonical="https://cpt.daveroverts.nl"
         openGraph={{
           type: "website",
           locale: "en_GB",
