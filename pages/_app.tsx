@@ -25,6 +25,7 @@ export default function App(props: AppProps) {
       <DefaultSeo
         defaultTitle="CPT Movements Tracker"
         titleTemplate="%s | CPT Movements Tracker"
+        canonical="https://cpt.daveroverts.nl"
         openGraph={{
           type: "website",
           locale: "en_GB",
