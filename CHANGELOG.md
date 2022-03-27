@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v2.0.1...v2.0.2) (2022-03-27)
+
+
+### Bug Fixes
+
+* **_app:** add canonical url ([f14c0f1](https://github.com/daveroverts/cpt-movements-tracker/commit/f14c0f190f769c66dbbeb2f85a10d792ab52fbdc))
+
 ## [2.0.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v2.0.0...v2.0.1) (2022-03-22)
 
 
