@@ -21,10 +21,10 @@
     "cm": "cz"
   },
   "dependencies": {
-    "@mantine/core": "^4.0.4",
-    "@mantine/form": "^4.0.4",
-    "@mantine/hooks": "^4.0.4",
-    "@mantine/next": "^4.0.4",
+    "@mantine/core": "4.0.4",
+    "@mantine/form": "4.0.4",
+    "@mantine/hooks": "4.0.4",
+    "@mantine/next": "4.0.4",
     "@tabler/icons": "1.56.0",
     "fathom-client": "3.4.1",
     "localforage": "1.10.0",
