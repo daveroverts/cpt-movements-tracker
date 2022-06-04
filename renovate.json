@@ -1,5 +1,13 @@
 {
   "extends": [
     "github>daveroverts/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Mantine",
+      "matchPackagePrefixes": [
+        "@mantine/"
+      ]
+    }
   ]
 }
