@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.1...v1.3.2) (2022-06-04)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([666a0a1](https://github.com/daveroverts/cpt-movements-tracker/commit/666a0a1c515ccaf3f85879186a4b3bd8a6e044e2))
+
 ## [1.3.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.0...v1.3.1) (2022-03-27)
 
 
