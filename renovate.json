@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "github>daveroverts/renovate-config",
+    "group:linters"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Mantine",
+      "matchPackagePrefixes": [
+        "@mantine/"
+      ]
+    }
+  ]
+}
