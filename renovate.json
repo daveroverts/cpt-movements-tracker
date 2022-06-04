@@ -1,6 +1,7 @@
 {
   "extends": [
-    "github>daveroverts/renovate-config"
+    "github>daveroverts/renovate-config",
+    "group:linters"
   ],
   "packageRules": [
     {
