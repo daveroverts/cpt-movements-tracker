@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.2...v1.3.3) (2022-06-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v12.1.6 ([3ac1158](https://github.com/daveroverts/cpt-movements-tracker/commit/3ac1158ea2f2d4d4504edfeab13f3ff5647668fc))
+
 ## [1.3.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.1...v1.3.2) (2022-06-04)
 
 
