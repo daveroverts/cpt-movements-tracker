@@ -1,3 +1,11 @@
+## [1.3.4](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.3...v1.3.4) (2022-06-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @tabler/icons to v1.68.0 ([08def9e](https://github.com/daveroverts/cpt-movements-tracker/commit/08def9eb6844d711b7210ab42e57a7c850dfe130))
+* **deps:** update dependency next-seo to v5.4.0 ([8b573f3](https://github.com/daveroverts/cpt-movements-tracker/commit/8b573f350d06ebb9727bd95e2e14d895d2ceadf9))
+
 ## [1.3.3](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.2...v1.3.3) (2022-06-06)
 
 
