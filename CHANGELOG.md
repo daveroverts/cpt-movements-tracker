@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.4...v1.4.0) (2022-06-09)
+
+
+### Bug Fixes
+
+* **AircraftList:** add scroll-area to tables ([6ace9eb](https://github.com/daveroverts/cpt-movements-tracker/commit/6ace9eb4d5e70e7c0721c1a4e34d607097ea04c9))
+
+
+### Features
+
+* add overflights ([a5ee1e4](https://github.com/daveroverts/cpt-movements-tracker/commit/a5ee1e44f7f7fbcffb4ac434fb578707bb078432))
+
 ## [1.3.4](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.3...v1.3.4) (2022-06-06)
 
 
