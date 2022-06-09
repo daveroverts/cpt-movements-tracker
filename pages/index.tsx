@@ -3,7 +3,11 @@ import AircraftList from "components/AircraftList";
 import Copyright from "components/Copyright";
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
-import { IconPlaneArrival, IconPlaneDeparture } from "@tabler/icons";
+import {
+  IconPlaneArrival,
+  IconPlaneDeparture,
+  IconPlaneInflight,
+} from "@tabler/icons";
 import localforage from "localforage";
 import { useState, useEffect, useRef } from "react";
 
@@ -16,6 +20,7 @@ export default function Home() {
   const isMountedRef = useRef(true);
   const [departures, setDepartures] = useState<Array<IAircraftList>>([]);
   const [arrivals, setArrivals] = useState<Array<IAircraftList>>([]);
+  const [overflights, setOverflights] = useState<Array<IAircraftList>>([]);
 
   useEffect(
     () => () => {
@@ -36,6 +41,12 @@ export default function Home() {
         setArrivals(value);
       }
     });
+
+    localforage.getItem<Array<IAircraftList>>("overflights", (_err, value) => {
+      if (value != null && isMountedRef.current) {
+        setOverflights(value);
+      }
+    });
   }, []);
 
   useEffect(() => {
@@ -46,9 +57,15 @@ export default function Home() {
     localforage.setItem("arrivals", arrivals);
   }, [arrivals]);
 
+  useEffect(() => {
+    localforage.setItem("overflights", overflights);
+  }, [overflights]);
+
   return (
     <Container>
-      <Title order={2}>Total: [{departures.length + arrivals.length}]</Title>
+      <Title order={2}>
+        Total: [{departures.length + arrivals.length + overflights.length}]
+      </Title>
       <Grid mt="xs">
         <Grid.Col xs={12} md={6}>
           <AircraftList
@@ -79,6 +96,22 @@ export default function Home() {
                 (_, i) => aircraftIndex !== i
               );
               setArrivals(newAircraft);
+            }}
+          />
+        </Grid.Col>
+        <Grid.Col xs={12} md={6}>
+          <AircraftList
+            title="Overflights"
+            icon={<IconPlaneInflight />}
+            aircraft={overflights}
+            saveAircraft={(val: string) => {
+              setOverflights([...overflights, { id: uuidv4(), callsign: val }]);
+            }}
+            deleteAircraft={(aircraftIndex: number) => {
+              const newAircraft = overflights.filter(
+                (_, i) => aircraftIndex !== i
+              );
+              setOverflights(newAircraft);
             }}
           />
         </Grid.Col>
