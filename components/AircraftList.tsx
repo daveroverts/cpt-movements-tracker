@@ -1,4 +1,12 @@
-import { ActionIcon, Group, Paper, Table, Text, Title } from "@mantine/core";
+import {
+  ActionIcon,
+  Group,
+  Paper,
+  ScrollArea,
+  Table,
+  Text,
+  Title,
+} from "@mantine/core";
 import { IconTrash } from "@tabler/icons";
 import AircraftForm from "./AircraftForm";
 
@@ -56,9 +64,11 @@ export default function AircraftList(Props: IAircraftListProps) {
         saveAircraft={(val: { callsign: string }) => saveAircraft(val.callsign)}
       />
 
-      <Table mt="xs" style={{ tableLayout: "fixed" }} highlightOnHover>
-        <tbody>{rows}</tbody>
-      </Table>
+      <ScrollArea type="hover" style={{ maxHeight: 500, overflow: "auto" }}>
+        <Table mt="xs" style={{ tableLayout: "fixed" }} highlightOnHover>
+          <tbody>{rows}</tbody>
+        </Table>
+      </ScrollArea>
     </Paper>
   );
 }
