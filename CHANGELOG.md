@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.4.0...v1.5.0) (2022-06-10)
+
+
+### Bug Fixes
+
+* **deps:** update mantine to v4.2.8 ([b8233dd](https://github.com/daveroverts/cpt-movements-tracker/commit/b8233dd0768674110af00033db6dca551c4656f5))
+* prevent fouc if perferred theme is dark ([2717730](https://github.com/daveroverts/cpt-movements-tracker/commit/27177308b53516ca9dbf1668d1c18a92fbfd5b6c))
+
+
+### Features
+
+* **index:** save new items at top ([68e56c0](https://github.com/daveroverts/cpt-movements-tracker/commit/68e56c068f068337b78b730954471c130b3eda80)), closes [#33](https://github.com/daveroverts/cpt-movements-tracker/issues/33)
+
 # [1.4.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.3.4...v1.4.0) (2022-06-09)
 
 
