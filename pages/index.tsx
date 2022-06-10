@@ -73,7 +73,7 @@ export default function Home() {
             icon={<IconPlaneDeparture />}
             aircraft={departures}
             saveAircraft={(val: string) => {
-              setDepartures([...departures, { id: uuidv4(), callsign: val }]);
+              setDepartures([{ id: uuidv4(), callsign: val }, ...departures]);
             }}
             deleteAircraft={(aircraftIndex: number) => {
               const newAircraft = departures.filter(
@@ -89,7 +89,7 @@ export default function Home() {
             icon={<IconPlaneArrival />}
             aircraft={arrivals}
             saveAircraft={(val: string) => {
-              setArrivals([...arrivals, { id: uuidv4(), callsign: val }]);
+              setArrivals([{ id: uuidv4(), callsign: val }, ...arrivals]);
             }}
             deleteAircraft={(aircraftIndex: number) => {
               const newAircraft = arrivals.filter(
@@ -105,7 +105,7 @@ export default function Home() {
             icon={<IconPlaneInflight />}
             aircraft={overflights}
             saveAircraft={(val: string) => {
-              setOverflights([...overflights, { id: uuidv4(), callsign: val }]);
+              setOverflights([{ id: uuidv4(), callsign: val }, ...overflights]);
             }}
             deleteAircraft={(aircraftIndex: number) => {
               const newAircraft = overflights.filter(
