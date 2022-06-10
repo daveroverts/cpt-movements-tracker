@@ -8,17 +8,26 @@ import {
 import useAnalytics from "lib/analytics";
 import Layout from "components/Layout";
 import { DefaultSeo } from "next-seo";
-import { useColorScheme } from "@mantine/hooks";
 import { useState } from "react";
+import { GetServerSidePropsContext } from "next";
+import { getCookie, setCookies } from "cookies-next";
 
-export default function App(props: AppProps) {
+export default function App(
+  props: AppProps & { initialColorScheme: ColorScheme }
+) {
   useAnalytics();
-  const { Component, pageProps } = props;
-  const preferredColorScheme = useColorScheme();
+  const { Component, pageProps, initialColorScheme } = props;
   const [colorScheme, setColorScheme] =
-    useState<ColorScheme>(preferredColorScheme);
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+    useState<ColorScheme>(initialColorScheme);
+
+  const toggleColorScheme = (value?: ColorScheme) => {
+    const nextColorScheme =
+      value || (colorScheme === "dark" ? "light" : "dark");
+    setColorScheme(nextColorScheme);
+    setCookies("mantine-color-scheme", nextColorScheme, {
+      maxAge: 60 * 60 * 24 * 30,
+    });
+  };
 
   return (
     <>
@@ -67,3 +76,7 @@ export default function App(props: AppProps) {
     </>
   );
 }
+
+App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
+  initialColorScheme: getCookie("mantine-color-scheme", ctx) || "light",
+});
