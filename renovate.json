@@ -10,5 +10,9 @@
         "@mantine/"
       ]
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  }
 }
