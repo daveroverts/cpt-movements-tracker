@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.0...v1.5.1) (2022-06-12)
+
+
+### Bug Fixes
+
+* **deps:** update mantine to v4.2.9 ([2bc5d89](https://github.com/daveroverts/cpt-movements-tracker/commit/2bc5d890aa9ce0adb334816635b473a900999ed9))
+
 # [1.5.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.4.0...v1.5.0) (2022-06-10)
 
 
