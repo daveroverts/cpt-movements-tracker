@@ -21,10 +21,10 @@
     "cm": "cz"
   },
   "dependencies": {
-    "@mantine/core": "4.2.8",
-    "@mantine/form": "4.2.8",
-    "@mantine/hooks": "4.2.8",
-    "@mantine/next": "4.2.8",
+    "@mantine/core": "4.2.9",
+    "@mantine/form": "4.2.9",
+    "@mantine/hooks": "4.2.9",
+    "@mantine/next": "4.2.9",
     "@tabler/icons": "1.68.0",
     "cookies-next": "2.0.4",
     "fathom-client": "3.4.1",
