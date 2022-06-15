@@ -15,12 +15,12 @@ export default class MyDocument extends Document {
 
     return {
       ...initialProps,
-      styles: (
+      styles: [
         <>
           {initialProps.styles}
           <ServerStyles html={initialProps.html} server={stylesServer} />
-        </>
-      ),
+        </>,
+      ],
     };
   }
 
