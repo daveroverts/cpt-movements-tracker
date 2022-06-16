@@ -6,7 +6,7 @@ import {
   Box,
   createStyles,
 } from "@mantine/core";
-import { IconSun, IconMoon } from "@tabler/icons";
+import { Moon, Sun } from "tabler-icons-react";
 
 export default function ThemeSwitcher() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -32,7 +32,7 @@ export default function ThemeSwitcher() {
             value: "light",
             label: (
               <Center>
-                <IconSun size={16} />
+                <Sun size={16} />
                 <Box ml={10} className={classes.isVisible}>
                   Light
                 </Box>
@@ -43,7 +43,7 @@ export default function ThemeSwitcher() {
             value: "dark",
             label: (
               <Center>
-                <IconMoon size={16} />
+                <Moon size={16} />
                 <Box ml={10} className={classes.isVisible}>
                   Dark
                 </Box>
