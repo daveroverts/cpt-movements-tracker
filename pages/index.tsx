@@ -3,13 +3,13 @@ import AircraftList from "components/AircraftList";
 import Copyright from "components/Copyright";
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
-import {
-  IconPlaneArrival,
-  IconPlaneDeparture,
-  IconPlaneInflight,
-} from "@tabler/icons";
 import localforage from "localforage";
 import { useState, useEffect, useRef } from "react";
+import {
+  PlaneArrival,
+  PlaneDeparture,
+  PlaneInflight,
+} from "tabler-icons-react";
 
 interface IAircraftList {
   id: string;
@@ -70,7 +70,7 @@ export default function Home() {
         <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Departures"
-            icon={<IconPlaneDeparture />}
+            icon={<PlaneDeparture />}
             aircraft={departures}
             saveAircraft={(val: string) => {
               setDepartures([{ id: uuidv4(), callsign: val }, ...departures]);
@@ -86,7 +86,7 @@ export default function Home() {
         <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Arrivals"
-            icon={<IconPlaneArrival />}
+            icon={<PlaneArrival />}
             aircraft={arrivals}
             saveAircraft={(val: string) => {
               setArrivals([{ id: uuidv4(), callsign: val }, ...arrivals]);
@@ -102,7 +102,7 @@ export default function Home() {
         <Grid.Col xs={12} md={6}>
           <AircraftList
             title="Overflights"
-            icon={<IconPlaneInflight />}
+            icon={<PlaneInflight />}
             aircraft={overflights}
             saveAircraft={(val: string) => {
               setOverflights([{ id: uuidv4(), callsign: val }, ...overflights]);

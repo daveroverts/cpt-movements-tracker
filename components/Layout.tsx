@@ -7,7 +7,7 @@ import {
   ThemeIcon,
   Title,
 } from "@mantine/core";
-import { IconPlaneInflight } from "@tabler/icons";
+import { PlaneInflight } from "tabler-icons-react";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Layout({ children }: any) {
@@ -28,7 +28,7 @@ export default function Layout({ children }: any) {
             <Group direction="row" position="apart" spacing="xs">
               <Group direction="row">
                 <ThemeIcon>
-                  <IconPlaneInflight />
+                  <PlaneInflight />
                 </ThemeIcon>
                 <Title className={classes.title}>CPT Movements Tracker</Title>
               </Group>
