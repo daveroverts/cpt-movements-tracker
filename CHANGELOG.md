@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.1...v1.5.2) (2022-06-16)
+
+
+### Bug Fixes
+
+* **deps:** replace @tabler/icons with tabler-icons-react ([6028173](https://github.com/daveroverts/cpt-movements-tracker/commit/6028173497535b8e84eea3e355c105a569df2e46))
+* **deps:** update react monorepo to v18 ([8d989c5](https://github.com/daveroverts/cpt-movements-tracker/commit/8d989c51fa84d0503d06cb96148d3226021f320b))
+
 ## [1.5.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.0...v1.5.1) (2022-06-12)
 
 
