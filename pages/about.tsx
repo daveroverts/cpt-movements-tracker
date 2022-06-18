@@ -14,9 +14,10 @@ export default function About() {
         <Title order={2}>About</Title>
         <Text mt="xs">
           This tool was created to better keep track of aircraft that visited a
-          CPT. There are 2 lists that can be filled with aircraft, 1 for
-          departures, and 1 for arrivals. Each list has its own counter, and
-          both are used in the total that can be viewed at the top.
+          CPT. There are 3 lists that can be filled with aircraft, 1 for
+          departures, 1 for arrivals, and 1 for overflights. Each list has its
+          own counter, and both are used in the total that can be viewed at the
+          top.
         </Text>
         <Text mt="xs">
           Good to know: Both lists are stored within your browser&lsquo;s
