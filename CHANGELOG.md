@@ -1,3 +1,11 @@
+## [1.5.5](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.4...v1.5.5) (2022-06-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fathom-client to v3.5.0 ([07a295e](https://github.com/daveroverts/cpt-movements-tracker/commit/07a295edc0d78011d649cb0138f571392c687bf9))
+* **deps:** update dependency tabler-icons-react to v1.51.0 ([1f49273](https://github.com/daveroverts/cpt-movements-tracker/commit/1f49273fa92bea848266abb21c1a4ebf310587aa))
+
 ## [1.5.4](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.3...v1.5.4) (2022-06-20)
 
 
