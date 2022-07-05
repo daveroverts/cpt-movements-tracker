@@ -1,3 +1,11 @@
+## [1.5.10](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.9...v1.5.10) (2022-07-05)
+
+
+### Bug Fixes
+
+* **_app:** fix deprecation warning on setcookies ([99a3d49](https://github.com/daveroverts/cpt-movements-tracker/commit/99a3d4918579531a1749d271e2775d675a3fbf34))
+* **deps:** update dependency next to v12.2.0 ([86e17b1](https://github.com/daveroverts/cpt-movements-tracker/commit/86e17b17c6b6064aa3b360e8682d30c7b1d6033a))
+
 ## [1.5.9](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.8...v1.5.9) (2022-07-05)
 
 
