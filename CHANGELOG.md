@@ -1,3 +1,11 @@
+## [1.5.8](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.7...v1.5.8) (2022-07-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cookies-next to v2.1.1 ([aef21a7](https://github.com/daveroverts/cpt-movements-tracker/commit/aef21a7c8b79c19f160ac3a5dd3e391da5bfcea2))
+* **deps:** update dependency tabler-icons-react to v1.52.0 ([1efb6f5](https://github.com/daveroverts/cpt-movements-tracker/commit/1efb6f5a1a279acea9b98ebaf322b65f65c95824))
+
 ## [1.5.7](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.6...v1.5.7) (2022-06-26)
 
 
