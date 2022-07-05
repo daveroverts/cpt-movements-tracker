@@ -10,7 +10,7 @@ import Layout from "components/Layout";
 import { DefaultSeo } from "next-seo";
 import { useState } from "react";
 import { GetServerSidePropsContext } from "next";
-import { getCookie, setCookies } from "cookies-next";
+import { getCookie, setCookie } from "cookies-next";
 
 export default function App(
   props: AppProps & { initialColorScheme: ColorScheme }
@@ -24,7 +24,7 @@ export default function App(
     const nextColorScheme =
       value || (colorScheme === "dark" ? "light" : "dark");
     setColorScheme(nextColorScheme);
-    setCookies("mantine-color-scheme", nextColorScheme, {
+    setCookie("mantine-color-scheme", nextColorScheme, {
       maxAge: 60 * 60 * 24 * 30,
     });
   };
