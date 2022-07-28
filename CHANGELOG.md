@@ -1,3 +1,11 @@
+## [1.5.12](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.11...v1.5.12) (2022-07-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-seo to v5.5.0 ([e221657](https://github.com/daveroverts/cpt-movements-tracker/commit/e22165746f7bd96fd89b058228eca587011e6254))
+* **deps:** update dependency tabler-icons-react to v1.54.0 ([5432ca0](https://github.com/daveroverts/cpt-movements-tracker/commit/5432ca0cb3737a1bc23e2f755f26b268e3023618))
+
 ## [1.5.11](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.10...v1.5.11) (2022-07-18)
 
 
