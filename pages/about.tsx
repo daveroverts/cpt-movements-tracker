@@ -1,4 +1,4 @@
-import { Button, Container, List, ListItem, Text, Title } from "@mantine/core";
+import { Button, Container, List, Text, Title } from "@mantine/core";
 import Copyright from "components/Copyright";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
@@ -30,17 +30,17 @@ export default function About() {
         </Title>
 
         <List mt="xs">
-          <ListItem>
+          <List.Item>
             When an aicraft calls up for example IFR clearance, you type in the
             callsign in the Departures list, and press Enter. Now the aicraft is
             added as an departure.
-          </ListItem>
+          </List.Item>
 
-          <ListItem>
+          <List.Item>
             When an aircraft calls on final, you type in the callsign in the
             Arrivals list, and press Enter. Now the aicraft is added as an
             arrival.
-          </ListItem>
+          </List.Item>
         </List>
 
         <Link href="/" passHref>
