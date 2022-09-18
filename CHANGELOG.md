@@ -1,3 +1,12 @@
+## [1.5.16](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.15...v1.5.16) (2022-09-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v12.3.0 ([25443f4](https://github.com/daveroverts/cpt-movements-tracker/commit/25443f4de24cbad059c11e2acdec0f785d5c4eac))
+* **deps:** update dependency tabler-icons-react to v1.55.0 ([29b2233](https://github.com/daveroverts/cpt-movements-tracker/commit/29b2233d8d8222d1b1617d7c4f26c497d5cea9aa))
+* **deps:** update dependency uuid to v9 ([82e7e03](https://github.com/daveroverts/cpt-movements-tracker/commit/82e7e03259396b814753f1bc7bc4321dc36d56f1))
+
 ## [1.5.15](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.14...v1.5.15) (2022-08-14)
 
 
