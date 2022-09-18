@@ -33,7 +33,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tabler-icons-react": "1.55.0",
-    "uuid": "8.3.2"
+    "uuid": "9.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
