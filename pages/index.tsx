@@ -117,7 +117,7 @@ export default function Home() {
         </Grid.Col>
       </Grid>
       <Group my="xl">
-        <Link href="/about" passHref>
+        <Link href="/about" passHref legacyBehavior>
           <Anchor>Go to the about page</Anchor>
         </Link>
       </Group>
