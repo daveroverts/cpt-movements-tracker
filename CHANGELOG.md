@@ -1,3 +1,10 @@
+## [1.5.25](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.24...v1.5.25) (2022-12-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tabler-icons-react to v1.56.0 ([6a59428](https://github.com/daveroverts/cpt-movements-tracker/commit/6a5942841d6489c456627ac7afaa6f7f131ff6de))
+
 ## [1.5.24](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.23...v1.5.24) (2022-12-05)
 
 
