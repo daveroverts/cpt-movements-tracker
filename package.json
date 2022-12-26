@@ -40,7 +40,7 @@
     "@semantic-release/git": "10.0.1",
     "@types/node": "18.11.11",
     "@types/react": "18.0.26",
-    "@types/uuid": "8.3.4",
+    "@types/uuid": "9.0.0",
     "@typescript-eslint/eslint-plugin": "5.47.0",
     "@typescript-eslint/parser": "5.47.0",
     "cz-conventional-changelog": "3.3.0",
