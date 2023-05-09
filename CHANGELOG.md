@@ -1,3 +1,10 @@
+## [1.5.29](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.28...v1.5.29) (2023-05-09)
+
+
+### Bug Fixes
+
+* disable custom fathom url until further notice ([b050651](https://github.com/daveroverts/cpt-movements-tracker/commit/b050651b672f6db9cd87b5fd8bc39ca5472dfab3))
+
 ## [1.5.28](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.27...v1.5.28) (2023-01-28)
 
 
