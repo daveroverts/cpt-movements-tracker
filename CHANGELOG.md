@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.30...v1.6.0) (2023-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cookies-next to v2.1.2 ([9821670](https://github.com/daveroverts/cpt-movements-tracker/commit/9821670a5897eaade038ca5018cb83cb26d7dcff))
+* **deps:** update dependency next to v13.4.12 ([9cbc77b](https://github.com/daveroverts/cpt-movements-tracker/commit/9cbc77b7128f031b1ccc5c9d25242ac3fc559638))
+* **deps:** update dependency next-seo to v6.1.0 ([950cad3](https://github.com/daveroverts/cpt-movements-tracker/commit/950cad3050c23d64dd3a3cf6323725141831fe0f))
+
+
+### Features
+
+* use dark mode by default ([4ad481b](https://github.com/daveroverts/cpt-movements-tracker/commit/4ad481baabc3bd09da155f361e87b538e916da80))
+
 ## [1.5.30](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.5.29...v1.5.30) (2023-05-29)
 
 
