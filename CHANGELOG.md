@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.1...v1.6.2) (2023-08-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cookies-next to v3 ([c135a17](https://github.com/daveroverts/cpt-movements-tracker/commit/c135a1761b7a602280cb7ad1f677e0d4cb33c6df))
+
 ## [1.6.1](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.0...v1.6.1) (2023-08-26)
 
 
