@@ -33,14 +33,14 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tabler-icons-react": "1.56.0",
-    "uuid": "9.0.0"
+    "uuid": "9.0.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/node": "18.17.15",
     "@types/react": "18.2.21",
-    "@types/uuid": "9.0.3",
+    "@types/uuid": "9.0.4",
     "@typescript-eslint/eslint-plugin": "6.4.1",
     "@typescript-eslint/parser": "6.4.1",
     "cz-conventional-changelog": "3.3.0",
