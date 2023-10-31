@@ -1,3 +1,11 @@
+## [1.6.6](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.5...v1.6.6) (2023-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fathom-client to v3.6.0 ([d2c896f](https://github.com/daveroverts/cpt-movements-tracker/commit/d2c896fe34dc0ce21e93798a1fb916f6aea6a18e))
+* **deps:** update dependency next-seo to v6.4.0 ([764ab04](https://github.com/daveroverts/cpt-movements-tracker/commit/764ab042868e13f490bb6fc2a53b43746828048d))
+
 ## [1.6.5](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.4...v1.6.5) (2023-10-26)
 
 
