@@ -1,3 +1,12 @@
+## [1.6.8](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.7...v1.6.8) (2024-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v14 ([1cdf774](https://github.com/daveroverts/cpt-movements-tracker/commit/1cdf77488db78f30528d86ace74f7184c7a238e6))
+* **deps:** update mantine to v5 ([d6486e4](https://github.com/daveroverts/cpt-movements-tracker/commit/d6486e410070089c380b721848979f5a8f3c3bab))
+* **deps:** update mantine to v6 ([50e0495](https://github.com/daveroverts/cpt-movements-tracker/commit/50e049569fb3e2cac1aad5551132e331b8646096))
+
 ## [1.6.7](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.6...v1.6.7) (2024-01-21)
 
 
