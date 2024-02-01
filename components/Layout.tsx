@@ -25,8 +25,8 @@ export default function Layout({ children }: any) {
       header={
         <Header height={60} p="xs">
           <Container>
-            <Group direction="row" position="apart" spacing="xs">
-              <Group direction="row">
+            <Group position="apart" spacing="xs">
+              <Group>
                 <ThemeIcon>
                   <PlaneInflight />
                 </ThemeIcon>

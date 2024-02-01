@@ -26,7 +26,7 @@ export default function Home() {
     () => () => {
       isMountedRef.current = false;
     },
-    []
+    [],
   );
 
   useEffect(() => {
@@ -77,7 +77,7 @@ export default function Home() {
             }}
             deleteAircraft={(aircraftIndex: number) => {
               const newAircraft = departures.filter(
-                (_, i) => aircraftIndex !== i
+                (_, i) => aircraftIndex !== i,
               );
               setDepartures(newAircraft);
             }}
@@ -93,7 +93,7 @@ export default function Home() {
             }}
             deleteAircraft={(aircraftIndex: number) => {
               const newAircraft = arrivals.filter(
-                (_, i) => aircraftIndex !== i
+                (_, i) => aircraftIndex !== i,
               );
               setArrivals(newAircraft);
             }}
@@ -109,7 +109,7 @@ export default function Home() {
             }}
             deleteAircraft={(aircraftIndex: number) => {
               const newAircraft = overflights.filter(
-                (_, i) => aircraftIndex !== i
+                (_, i) => aircraftIndex !== i,
               );
               setOverflights(newAircraft);
             }}
