@@ -13,7 +13,7 @@ import { GetServerSidePropsContext } from "next";
 import { getCookie, setCookie } from "cookies-next";
 
 export default function App(
-  props: AppProps & { initialColorScheme: ColorScheme }
+  props: AppProps & { initialColorScheme: ColorScheme },
 ) {
   useAnalytics();
   const { Component, pageProps, initialColorScheme } = props;
