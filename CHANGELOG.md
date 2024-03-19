@@ -1,3 +1,10 @@
+## [1.6.10](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.9...v1.6.10) (2024-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/react to v11.11.4 ([e747738](https://github.com/daveroverts/cpt-movements-tracker/commit/e747738b4f2edebba03a0ccfaef65f5c1b0adee5))
+
 ## [1.6.9](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.8...v1.6.9) (2024-02-01)
 
 
