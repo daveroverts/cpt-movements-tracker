@@ -1,3 +1,10 @@
+## [1.6.11](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.10...v1.6.11) (2024-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-seo to v6.5.0 ([b45bb70](https://github.com/daveroverts/cpt-movements-tracker/commit/b45bb707805549736e3bace25f7ed19333d25e44))
+
 ## [1.6.10](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.9...v1.6.10) (2024-03-19)
 
 
