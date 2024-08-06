@@ -1,15 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>daveroverts/renovate-config",
-    "group:linters"
-  ],
+  "extends": ["github>daveroverts/renovate-config", "group:linters"],
   "packageRules": [
     {
       "groupName": "Mantine",
-      "matchPackagePrefixes": [
-        "@mantine/"
-      ]
+      "matchPackageNames": ["@mantine/{/,}**"]
     }
   ],
   "lockFileMaintenance": {
