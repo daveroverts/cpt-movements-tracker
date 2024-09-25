@@ -1,3 +1,13 @@
+## [1.6.16](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.15...v1.6.16) (2024-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/react to v11.13.3 ([2d07e36](https://github.com/daveroverts/cpt-movements-tracker/commit/2d07e36e3954479f65d1dfdf12a85aa5cbbb5da8))
+* **deps:** update dependency fathom-client to v3.7.2 ([f9d235c](https://github.com/daveroverts/cpt-movements-tracker/commit/f9d235cb10a873e2bf41c25cacddad0ea20268cc))
+* **deps:** update dependency next to v14.2.13 ([94da95d](https://github.com/daveroverts/cpt-movements-tracker/commit/94da95dfee6f36e6aa37a4425a6abe66bda8d767))
+* **deps:** update mantine to v6.0.22 ([c699df1](https://github.com/daveroverts/cpt-movements-tracker/commit/c699df1c5bb4330dbed77aa29c24c98ec85cd3cd))
+
 ## [1.6.15](https://github.com/daveroverts/cpt-movements-tracker/compare/v1.6.14...v1.6.15) (2024-06-28)
 
 
