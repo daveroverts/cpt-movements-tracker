@@ -21,7 +21,7 @@
     "cm": "cz"
   },
   "dependencies": {
-    "@emotion/react": "11.13.3",
+    "@emotion/react": "11.14.0",
     "@emotion/server": "11.11.0",
     "@mantine/core": "6.0.22",
     "@mantine/form": "6.0.22",
